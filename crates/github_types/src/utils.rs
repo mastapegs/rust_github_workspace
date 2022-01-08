@@ -18,7 +18,7 @@ mod tests {
         let env_map = get_env_hashmap();
         assert_eq!(
             "123",
-            match env_map.get("TEST_VAR") {
+            match env_map.get("DOTENV_TEST_VAR") {
                 Some(value) => value,
                 None => "",
             }
